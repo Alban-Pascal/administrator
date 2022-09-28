@@ -6,7 +6,7 @@ export default function Footer({ isLight, handleToggleTheme }) {
       <p> The footer</p>
       <br></br>
       <button onClick={handleToggleTheme}>
-        Switch to{isLight ? "dark" : "light"} theme
+        Switch to{isLight ? "light" : "dark"} theme
       </button>
     </Wrapper>
   );

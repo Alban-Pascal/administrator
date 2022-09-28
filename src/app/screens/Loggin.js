@@ -4,7 +4,7 @@ export default function Loggin() {
   return (
     <div>
       <h1>Welcolme</h1>
-      <form className="card">
+      <form className="card-Loggin">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">
             Email address

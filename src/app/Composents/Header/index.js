@@ -1,122 +1,97 @@
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <Wrapper>
-      <h1> Administrator</h1>
-
-      <nav class="navbar navbar-expand-lg bg-light ">
-        <div class="container-fluid">
-          <Button>
-            <button
-              class="navbar-toggler"
-              type="button"
-              padding="0"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </Button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Administrator
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <div class="btn btn-secondary ">
-                    <Link to="/">Home</Link>
-                  </div>
+    <nav class="navbar navbar-expand-lg bg-light navbar-brand ">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1>Administrator </h1>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <Link class="nav-link active" aria-current="page" to="/">
+                Home
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link
+                class="nav-link active"
+                aria-current="page"
+                to="/AddStructure"
+              >
+                AddStructure
+              </Link>
+            </li>
+            <li class="nav-item dropdown">
+              <div
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Partner
+              </div>
+              <ul class="dropdown-menu">
+                <li>
+                  <Link class="dropdown-item" to="/PartnerActive">
+                    Partner Active
+                  </Link>
                 </li>
-                <li class="nav-item dropdown">
-                  <div
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Partner
-                  </div>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <div class="dropdown-item">
-                        <Link to="/PartnerActive">Partner Active</Link>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="dropdown-item">
-                        <Link to="/PartnerIdle">Partner Idle</Link>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <div
-                    class="nav-link dropdown-toggle"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Structure
-                  </div>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <div class="dropdown-item">
-                        <Link to="/StructureActive">Structure Active</Link>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="dropdown-item">
-                        <Link to="/StructureIdle">Structure Idle</Link>
-                      </div>
-                    </li>
-                  </ul>
+                <li>
+                  <Link class="dropdown-item" to="/PartnerIdle">
+                    Partner Idle
+                  </Link>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-secondary" type="secondary">
-                  Search
-                </button>
-              </form>
-            </div>
-          </div>
+            </li>
+            <li class="nav-item dropdown">
+              <div
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Structure
+              </div>
+              <ul class="dropdown-menu">
+                <li>
+                  <Link class="dropdown-item" to="/StructureActive">
+                    Structure Active
+                  </Link>
+                </li>
+                <li>
+                  <Link class="dropdown-item" to="/StructureIdle">
+                    Structure Idle
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-secondary" type="secondary">
+                Search
+              </button>
+            </form>
+          </ul>
         </div>
-      </nav>
-    </Wrapper>
+      </div>
+    </nav>
   );
 }
-
-const Wrapper = styled.header`
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-`;
-
-const Button = styled.div``;

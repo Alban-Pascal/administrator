@@ -9,6 +9,7 @@ import PartnerActive from "./app/screens/PartnerActive";
 import PartnerIdle from "./app/screens/PartnerIdle";
 import StructureActive from "./app/screens/StructureActive";
 import StructureIdle from "./app/screens/StructureIdle";
+import AddStructure from "./app/screens/AddStructure";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="PartnerIdle" element={<PartnerIdle />} />
           <Route path="StructureActive" element={<StructureActive />} />
           <Route path="StructureIdle" element={<StructureIdle />} />
+          <Route path="AddStructure" element={<AddStructure />} />
         </Routes>
       </Layout>
     </Router>
