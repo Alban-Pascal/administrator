@@ -1,10 +1,44 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+
+const client = axios.create({
+  baseURL: "https://jsonplaceholder.typicode.com/posts",
+});
 
 export default function Home() {
+  const [post, setPost] = useState(null);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const result = await axios("http://localhost:9999/addStructure");
+  //     setStructureName(result.data);
+  //   };
+  //   fetchData();
+  // }, []);
+
+  // useEffect(() => {
+  //   async function getPost() {
+  //     const response = await client.get("/");
+  //     setPost(response.data);
+  //   }
+  //   getPost();
+  // }, []);
+
   return (
     <div>
-      <h2>Partenaire</h2>
-      <table class="table ">
+      <h2>Partenaires</h2>
+
+      {/* <h1> {post.title}</h1>
+      {/*
+      <ul>
+        {structureName.map((item) => (
+          <li key={item.id}>
+            <p>{item.structureName}</p>
+          </li>
+        ))}
+      </ul>  */}
+
+      <table className="table ">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -35,7 +69,7 @@ export default function Home() {
         </tbody>
       </table>
       <h2>Structure</h2>
-      <table class="table">
+      <table className="table">
         <thead>
           <tr>
             <th scope="col">#</th>

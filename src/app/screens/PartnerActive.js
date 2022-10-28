@@ -4,7 +4,7 @@ export default function PartnerActive() {
   return (
     <div>
       <h1> PartnerActive </h1>
-      <table class="table ">
+      <table className="table ">
         <thead>
           <tr>
             <th scope="col">#</th>

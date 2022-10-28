@@ -7,77 +7,92 @@ export default function StructureActive() {
     <Wrapper>
       <h1> StructureActive: </h1>
 
-      <div class="card">
+      <div className="card">
         <img
           src="https://www.selimniederhoffer.com/blog/wp-content/uploads/2019/06/C-White-1024x683.jpg"
-          class="card-img-top"
+          className="card-img-top"
           alt="sports Hall"
         />
-        <div class="card-body">
-          <h4 class="card-title"> Body Summer </h4>
+        <div className="card-body">
+          <h4 className="card-title"> Body Summer </h4>
           <h5>premises:Paris</h5>
-          <div class="form-check form-switch">
+          <div className="form-check form-switch">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="checkbox"
               role="switch"
               id="flexSwitchCheckDefault"
             />
-            <label class="form-check-label" for="flexSwitchCheckDefault">
+            <label
+              className="form-check-label"
+              htmlfor="flexSwitchCheckDefault"
+            >
               structure in function
             </label>
           </div>
-          <p class="card-text">
+          <p className="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <div class="form-check form-switch">
+          <div className="form-check form-switch">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="checkbox"
               role="switch"
               id="flexSwitchCheckDefault"
             />
-            <label class="form-check-label" for="flexSwitchCheckDefault">
+            <label
+              className="form-check-label"
+              htmlfor="flexSwitchCheckDefault"
+            >
               sell drinks
             </label>
           </div>
-          <div class="form-check form-switch">
+          <div className="form-check form-switch">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="checkbox"
               role="switch"
               id="flexSwitchCheckDefault"
             />
-            <label class="form-check-label" for="flexSwitchCheckDefault">
+            <label
+              className="form-check-label"
+              htmlfor="flexSwitchCheckDefault"
+            >
               flyer
             </label>
           </div>
-          <div class="form-check form-switch">
+          <div className="form-check form-switch">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="checkbox"
               role="switch"
               id="flexSwitchCheckDefault"
             />
-            <label class="form-check-label" for="flexSwitchCheckDefault">
+            <label
+              className="form-check-label"
+              htmlfor="flexSwitchCheckDefault"
+            >
               send a newsletter
             </label>
           </div>
-          <div class="form-check form-switch">
+          <div className="form-check form-switch">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="checkbox"
               role="switch"
               id="flexSwitchCheckDefault"
             />
-            <label class="form-check-label" for="flexSwitchCheckDefault">
+            <label
+              className="form-check-label"
+              htmlfor="flexSwitchCheckDefault"
+            >
               manage the schedule
             </label>
           </div>
           <button
             type="button"
-            class="btn btn-light"
+            className="btn btn-light"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
@@ -85,37 +100,37 @@ export default function StructureActive() {
           </button>
 
           <div
-            class="modal fade"
+            className="modal fade"
             id="exampleModal"
             tabindex="-1"
             aria-labelledby="exampleModalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title" id="exampleModalLabel">
                     Validation of changes
                   </h5>
                   <button
                     type="button"
-                    class="btn-close"
+                    className="btn-close"
                     data-bs-dismiss="modal"
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="modal-body">
+                <div className="modal-body">
                   <p> You have modified the permissions of the structure</p>
                 </div>
-                <div class="modal-footer">
+                <div className="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    className="btn btn-secondary"
                     data-bs-dismiss="modal"
                   >
                     Back
                   </button>
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" className="btn btn-primary">
                     Save changes
                   </button>
                 </div>

@@ -4,7 +4,7 @@ export default function PartnerIdle() {
   return (
     <div>
       <h1>Partner Idle </h1>
-      <table class="table ">
+      <table className="table ">
         <thead>
           <tr>
             <th scope="col">#</th>
